@@ -10,7 +10,6 @@ export default function App() {
 		<div className='App'>
 			<Canvas>
 				{/* <Stats className='stats' /> */}
-				
 				<Scene />
 			</Canvas>
 		</div>
