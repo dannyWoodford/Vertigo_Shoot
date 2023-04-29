@@ -1,0 +1,40 @@
+@import '1-settings/fonts';
+@import '1-settings/colors';
+@import '1-settings/breakpoints';
+@import '2-tools/breakpoint-sass';
+@import '2-tools/variables';
+// @import '3-base/misc';
+// @import '4-components/';
+// @import '5-pages/';
+
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	font-family: $font-family, sans-serif;
+	outline: none;
+	background: $color-black;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.App {
+	height: 100%;
+	width: 100%;
+}
+
+.stats {
+	left: auto !important;
+	right: 0 !important;
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/main.scss'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Canvas } from '@react-three/fiber'
+// import { Stats } from '@react-three/drei'
+
+// import studio from '@theatre/studio'
+// import extension from '@theatre/r3f/dist/extension'
+
+import Scene from './js/Scene'
+
+// studio.initialize()
+// studio.extend(extension)
+
+export default function App() {
+	return (
+		<div className='App'>
+			<Canvas>
+				{/* <Stats className='stats' /> */}
+				<Scene />
+			</Canvas>
+		</div>
+	)
 }
-
-export default App;
